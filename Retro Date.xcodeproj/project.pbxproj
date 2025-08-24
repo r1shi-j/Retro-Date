@@ -6,14 +6,65 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5B7D40E72E5B5AEA00ABB54F /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7D40E62E5B5AEA00ABB54F /* PhotosUI.framework */; };
+		5B7D40E92E5B5AEA00ABB54F /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7D40E82E5B5AEA00ABB54F /* Photos.framework */; };
+		5B7D40F32E5B5AEA00ABB54F /* RetroDatePhotoEditor.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5B7D40E42E5B5AEA00ABB54F /* RetroDatePhotoEditor.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5B7D40F12E5B5AEA00ABB54F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B7D40A92E5B198000ABB54F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B7D40E32E5B5AEA00ABB54F;
+			remoteInfo = RetroDatePhotoEditor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5B7D40F82E5B5AEA00ABB54F /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5B7D40F32E5B5AEA00ABB54F /* RetroDatePhotoEditor.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		5B7D40B12E5B198000ABB54F /* Retro Date.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Retro Date.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B7D40E42E5B5AEA00ABB54F /* RetroDatePhotoEditor.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RetroDatePhotoEditor.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B7D40E62E5B5AEA00ABB54F /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
+		5B7D40E82E5B5AEA00ABB54F /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		5B7D40F42E5B5AEA00ABB54F /* Exceptions for "RetroDatePhotoEditor" folder in "RetroDatePhotoEditor" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 5B7D40E32E5B5AEA00ABB54F /* RetroDatePhotoEditor */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		5B7D40B32E5B198000ABB54F /* Retro Date */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Retro Date";
+			sourceTree = "<group>";
+		};
+		5B7D40EA2E5B5AEA00ABB54F /* RetroDatePhotoEditor */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				5B7D40F42E5B5AEA00ABB54F /* Exceptions for "RetroDatePhotoEditor" folder in "RetroDatePhotoEditor" target */,
+			);
+			path = RetroDatePhotoEditor;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -26,6 +77,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5B7D40E12E5B5AEA00ABB54F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B7D40E72E5B5AEA00ABB54F /* PhotosUI.framework in Frameworks */,
+				5B7D40E92E5B5AEA00ABB54F /* Photos.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -33,6 +93,8 @@
 			isa = PBXGroup;
 			children = (
 				5B7D40B32E5B198000ABB54F /* Retro Date */,
+				5B7D40EA2E5B5AEA00ABB54F /* RetroDatePhotoEditor */,
+				5B7D40E52E5B5AEA00ABB54F /* Frameworks */,
 				5B7D40B22E5B198000ABB54F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,8 +103,18 @@
 			isa = PBXGroup;
 			children = (
 				5B7D40B12E5B198000ABB54F /* Retro Date.app */,
+				5B7D40E42E5B5AEA00ABB54F /* RetroDatePhotoEditor.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		5B7D40E52E5B5AEA00ABB54F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B7D40E62E5B5AEA00ABB54F /* PhotosUI.framework */,
+				5B7D40E82E5B5AEA00ABB54F /* Photos.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -55,10 +127,12 @@
 				5B7D40AD2E5B198000ABB54F /* Sources */,
 				5B7D40AE2E5B198000ABB54F /* Frameworks */,
 				5B7D40AF2E5B198000ABB54F /* Resources */,
+				5B7D40F82E5B5AEA00ABB54F /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5B7D40F22E5B5AEA00ABB54F /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				5B7D40B32E5B198000ABB54F /* Retro Date */,
@@ -69,6 +143,28 @@
 			productName = "Retro Date";
 			productReference = 5B7D40B12E5B198000ABB54F /* Retro Date.app */;
 			productType = "com.apple.product-type.application";
+		};
+		5B7D40E32E5B5AEA00ABB54F /* RetroDatePhotoEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B7D40F52E5B5AEA00ABB54F /* Build configuration list for PBXNativeTarget "RetroDatePhotoEditor" */;
+			buildPhases = (
+				5B7D40E02E5B5AEA00ABB54F /* Sources */,
+				5B7D40E12E5B5AEA00ABB54F /* Frameworks */,
+				5B7D40E22E5B5AEA00ABB54F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				5B7D40EA2E5B5AEA00ABB54F /* RetroDatePhotoEditor */,
+			);
+			name = RetroDatePhotoEditor;
+			packageProductDependencies = (
+			);
+			productName = RetroDatePhotoEditor;
+			productReference = 5B7D40E42E5B5AEA00ABB54F /* RetroDatePhotoEditor.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -81,6 +177,9 @@
 				LastUpgradeCheck = 2600;
 				TargetAttributes = {
 					5B7D40B02E5B198000ABB54F = {
+						CreatedOnToolsVersion = 26.0;
+					};
+					5B7D40E32E5B5AEA00ABB54F = {
 						CreatedOnToolsVersion = 26.0;
 					};
 				};
@@ -100,12 +199,20 @@
 			projectRoot = "";
 			targets = (
 				5B7D40B02E5B198000ABB54F /* Retro Date */,
+				5B7D40E32E5B5AEA00ABB54F /* RetroDatePhotoEditor */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		5B7D40AF2E5B198000ABB54F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B7D40E22E5B5AEA00ABB54F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +229,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5B7D40E02E5B5AEA00ABB54F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5B7D40F22E5B5AEA00ABB54F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B7D40E32E5B5AEA00ABB54F /* RetroDatePhotoEditor */;
+			targetProxy = 5B7D40F12E5B5AEA00ABB54F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		5B7D40BA2E5B198100ABB54F /* Debug */ = {
@@ -256,6 +378,8 @@
 				DEVELOPMENT_TEAM = WGJA24P7XU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Retro-Date-Info.plist";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Saving the modified photo";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -287,6 +411,8 @@
 				DEVELOPMENT_TEAM = WGJA24P7XU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Retro-Date-Info.plist";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Saving the modified photo";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -301,6 +427,60 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5B7D40F62E5B5AEA00ABB54F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WGJA24P7XU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RetroDatePhotoEditor/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RetroDatePhotoEditor;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jansari.rishi.Retro-Date.RetroDatePhotoEditor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5B7D40F72E5B5AEA00ABB54F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WGJA24P7XU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RetroDatePhotoEditor/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RetroDatePhotoEditor;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jansari.rishi.Retro-Date.RetroDatePhotoEditor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
@@ -325,6 +505,15 @@
 			buildConfigurations = (
 				5B7D40BD2E5B198100ABB54F /* Debug */,
 				5B7D40BE2E5B198100ABB54F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B7D40F52E5B5AEA00ABB54F /* Build configuration list for PBXNativeTarget "RetroDatePhotoEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B7D40F62E5B5AEA00ABB54F /* Debug */,
+				5B7D40F72E5B5AEA00ABB54F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
