@@ -16,6 +16,8 @@ struct ContentView: View {
     @State private var imageData: Data?
     @State private var isProcessing = false
     
+//    @Environment(AppState.self) private var appState
+    
     var body: some View {
         VStack(spacing: 20) {
             if isProcessing {
@@ -68,6 +70,21 @@ struct ContentView: View {
                 UIApplication.shared.open(URL(string: "photos-redirect://")!)
             }
         }
+//        .onAppear {
+//            print("appear")
+//            if let data = appState.importedData {
+//                isProcessing = true
+//                print("starting")
+//                Task {
+//                    if let uiImage = UIImage(data: data) {
+//                        imageData = data
+//                        selectedImage = uiImage
+//                        processedImage = addTimestamp(to: uiImage, originalData: data)
+//                        isProcessing = false
+//                    }
+//                }
+//            }
+//        }
     }
     
     private func addTimestamp(to image: UIImage, originalData: Data) -> UIImage? {

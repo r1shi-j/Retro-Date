@@ -20,6 +20,13 @@
 			remoteGlobalIDString = 5B7D40E32E5B5AEA00ABB54F;
 			remoteInfo = RetroDatePhotoEditor;
 		};
+		5B7D41132E5C5B1500ABB54F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B7D40A92E5B198000ABB54F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B7D40FE2E5C4CF600ABB54F;
+			remoteInfo = RetroDateShare;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +48,7 @@
 		5B7D40E42E5B5AEA00ABB54F /* RetroDatePhotoEditor.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RetroDatePhotoEditor.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B7D40E62E5B5AEA00ABB54F /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
 		5B7D40E82E5B5AEA00ABB54F /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		5B7D40FF2E5C4CF600ABB54F /* RetroDateShare.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RetroDateShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -50,6 +58,13 @@
 				Info.plist,
 			);
 			target = 5B7D40E32E5B5AEA00ABB54F /* RetroDatePhotoEditor */;
+		};
+		5B7D410A2E5C4CF600ABB54F /* Exceptions for "RetroDateShare" folder in "RetroDateShare" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 5B7D40FE2E5C4CF600ABB54F /* RetroDateShare */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -65,6 +80,14 @@
 				5B7D40F42E5B5AEA00ABB54F /* Exceptions for "RetroDatePhotoEditor" folder in "RetroDatePhotoEditor" target */,
 			);
 			path = RetroDatePhotoEditor;
+			sourceTree = "<group>";
+		};
+		5B7D41002E5C4CF600ABB54F /* RetroDateShare */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				5B7D410A2E5C4CF600ABB54F /* Exceptions for "RetroDateShare" folder in "RetroDateShare" target */,
+			);
+			path = RetroDateShare;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -86,6 +109,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5B7D40FC2E5C4CF600ABB54F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -94,6 +124,7 @@
 			children = (
 				5B7D40B32E5B198000ABB54F /* Retro Date */,
 				5B7D40EA2E5B5AEA00ABB54F /* RetroDatePhotoEditor */,
+				5B7D41002E5C4CF600ABB54F /* RetroDateShare */,
 				5B7D40E52E5B5AEA00ABB54F /* Frameworks */,
 				5B7D40B22E5B198000ABB54F /* Products */,
 			);
@@ -104,6 +135,7 @@
 			children = (
 				5B7D40B12E5B198000ABB54F /* Retro Date.app */,
 				5B7D40E42E5B5AEA00ABB54F /* RetroDatePhotoEditor.appex */,
+				5B7D40FF2E5C4CF600ABB54F /* RetroDateShare.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,6 +165,7 @@
 			);
 			dependencies = (
 				5B7D40F22E5B5AEA00ABB54F /* PBXTargetDependency */,
+				5B7D41142E5C5B1500ABB54F /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				5B7D40B32E5B198000ABB54F /* Retro Date */,
@@ -166,6 +199,28 @@
 			productReference = 5B7D40E42E5B5AEA00ABB54F /* RetroDatePhotoEditor.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		5B7D40FE2E5C4CF600ABB54F /* RetroDateShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B7D410B2E5C4CF600ABB54F /* Build configuration list for PBXNativeTarget "RetroDateShare" */;
+			buildPhases = (
+				5B7D40FB2E5C4CF600ABB54F /* Sources */,
+				5B7D40FC2E5C4CF600ABB54F /* Frameworks */,
+				5B7D40FD2E5C4CF600ABB54F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				5B7D41002E5C4CF600ABB54F /* RetroDateShare */,
+			);
+			name = RetroDateShare;
+			packageProductDependencies = (
+			);
+			productName = RetroDateShare;
+			productReference = 5B7D40FF2E5C4CF600ABB54F /* RetroDateShare.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -180,6 +235,9 @@
 						CreatedOnToolsVersion = 26.0;
 					};
 					5B7D40E32E5B5AEA00ABB54F = {
+						CreatedOnToolsVersion = 26.0;
+					};
+					5B7D40FE2E5C4CF600ABB54F = {
 						CreatedOnToolsVersion = 26.0;
 					};
 				};
@@ -200,6 +258,7 @@
 			targets = (
 				5B7D40B02E5B198000ABB54F /* Retro Date */,
 				5B7D40E32E5B5AEA00ABB54F /* RetroDatePhotoEditor */,
+				5B7D40FE2E5C4CF600ABB54F /* RetroDateShare */,
 			);
 		};
 /* End PBXProject section */
@@ -213,6 +272,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		5B7D40E22E5B5AEA00ABB54F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B7D40FD2E5C4CF600ABB54F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -236,6 +302,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5B7D40FB2E5C4CF600ABB54F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -243,6 +316,11 @@
 			isa = PBXTargetDependency;
 			target = 5B7D40E32E5B5AEA00ABB54F /* RetroDatePhotoEditor */;
 			targetProxy = 5B7D40F12E5B5AEA00ABB54F /* PBXContainerItemProxy */;
+		};
+		5B7D41142E5C5B1500ABB54F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B7D40FE2E5C4CF600ABB54F /* RetroDateShare */;
+			targetProxy = 5B7D41132E5C5B1500ABB54F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -488,6 +566,64 @@
 			};
 			name = Release;
 		};
+		5B7D410C2E5C4CF600ABB54F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WGJA24P7XU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RetroDateShare/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RetroDateShare;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jansari.rishi.Retro-Date.RetroDateShare";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5B7D410D2E5C4CF600ABB54F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WGJA24P7XU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RetroDateShare/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RetroDateShare;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jansari.rishi.Retro-Date.RetroDateShare";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -514,6 +650,15 @@
 			buildConfigurations = (
 				5B7D40F62E5B5AEA00ABB54F /* Debug */,
 				5B7D40F72E5B5AEA00ABB54F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B7D410B2E5C4CF600ABB54F /* Build configuration list for PBXNativeTarget "RetroDateShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B7D410C2E5C4CF600ABB54F /* Debug */,
+				5B7D410D2E5C4CF600ABB54F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
